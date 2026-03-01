@@ -54,6 +54,7 @@
             letter-spacing: -1px;
             background: linear-gradient(90deg, var(--primary), var(--secondary));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 10px;
         }
@@ -294,7 +295,7 @@
 
         <div class="section">
             <div class="label">Processor</div>
-            <select id="processor">
+            <select id="processor" onchange="checkWarnings()">
                 <option value="realesrgan" selected>Real-ESRGAN (Recommended)</option>
                 <option value="realcugan">Real-CUGAN (Anime Optimized)</option>
                 <option value="rife">RIFE (Frame Interpolation)</option>
@@ -304,11 +305,19 @@
 
         <div class="section">
             <div class="label">Output Extension</div>
-            <select id="ext">
+            <select id="ext" onchange="checkWarnings()">
                 <option value="png">PNG (Lossless)</option>
                 <option value="jpg">JPG</option>
                 <option value="mp4">MP4 (Video)</option>
             </select>
+        </div>
+
+        <div id="anime4k-warning" class="section hidden"
+            style="color: var(--error); font-size: 13px; background: rgba(207, 102, 121, 0.1); padding: 10px; border-radius: 8px; border: 1px solid var(--error);">
+            <strong>⚠️ COMPATIBILITY NOTE:</strong><br>
+            Anime4k (libplacebo) currently has stability issues with <strong>video</strong> on macOS.
+            <br><br>
+            <strong>Real-CUGAN</strong> is recommended for anime video upscaling.
         </div>
 
         <div style="flex: 1"></div>
@@ -361,6 +370,18 @@
 
     <script>
         let inputPath = null;
+
+        function checkWarnings() {
+            const processor = document.getElementById('processor').value;
+            const ext = document.getElementById('ext').value;
+            const warning = document.getElementById('anime4k-warning');
+
+            if (processor === 'anime4k' && ext === 'mp4') {
+                warning.classList.remove('hidden');
+            } else {
+                warning.classList.add('hidden');
+            }
+        }
 
         function log(msg, type = 'info') {
             const logs = document.getElementById('logs');

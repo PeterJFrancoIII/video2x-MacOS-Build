@@ -103,6 +103,9 @@ class Api:
         self.window.evaluate_js(f"onLog({json.dumps(f'[info] Command: {command_str}')})")
 
         def runner():
+            last_progress_time = time.time()
+            last_frame = -1
+            
             try:
                 process = subprocess.Popen(
                     cmd,
@@ -120,21 +123,40 @@ class Api:
                         debug_log(f"STDOUT: {clean_line}")
                         self.window.evaluate_js(f"onLog({json.dumps(clean_line)})")
                         
-                        progress_match = re.search(r"frame=(\d+)/(\d+)\s*\(([\d.]+)%\);\s*fps=([\d.]+);\s*elapsed=([\d:]+);\s*remaining=([\d:]+)", clean_line)
+                        progress_match = re.search(r"frame=(\d+)/(\d+)", clean_line)
                         if progress_match:
-                            data = {
-                                "percent": float(progress_match.group(3)),
-                                "fps": progress_match.group(4),
-                                "elapsed": progress_match.group(5),
-                                "remaining": progress_match.group(6)
-                            }
-                            self.window.evaluate_js(f"updateProgress({json.dumps(data)})")
+                            current_frame = int(progress_match.group(1))
+                            if current_frame > last_frame:
+                                last_frame = current_frame
+                                last_progress_time = time.time()
+
+                            # Detailed progress for the UI
+                            detailed_match = re.search(r"frame=(\d+)/(\d+)\s*\(([\d.]+)%\);\s*fps=([\d.]+);\s*elapsed=([\d:]+);\s*remaining=([\d:]+)", clean_line)
+                            if detailed_match:
+                                data = {
+                                    "percent": float(detailed_match.group(3)),
+                                    "fps": detailed_match.group(4),
+                                    "elapsed": detailed_match.group(5),
+                                    "remaining": detailed_match.group(6)
+                                }
+                                self.window.evaluate_js(f"updateProgress({json.dumps(data)})")
+
+                        # Watchdog check (every few lines or so)
+                        if time.time() - last_progress_time > 45: # 45 seconds without frame progress
+                            if processor == "anime4k":
+                                debug_log("WATCHDOG: Anime4k video stall detected.")
+                                self.window.evaluate_js(f"onLog({json.dumps('[error] DETECTED STALL: Anime4k is not progressing. This is a known issue with libplacebo on macOS.')})")
+                                self.window.evaluate_js(f"onLog({json.dumps('[tip] PLEASE STOP and use Real-CUGAN for stable video upscaling.')})")
+                                # We don't kill it automatically to allow the user to see the logs, 
+                                # but we stop the watchdog so we don't spam.
+                                last_progress_time = time.time() + 3600 
 
                 process.wait()
                 debug_log(f"Process finished with code: {process.returncode}")
                 if process.returncode != 0:
                     # Detect common FFmpeg/libplacebo errors
-                    if "Filter 'libplacebo' not found" in open(DEBUG_LOG).read():
+                    log_content = open(DEBUG_LOG).read()
+                    if "Filter 'libplacebo' not found" in log_content:
                          self.window.evaluate_js(f"onLog({json.dumps('[error] SYSTEM LIMITATION: Your FFmpeg does not support libplacebo (Anime4k).')})")
                          self.window.evaluate_js(f"onLog({json.dumps('[tip] PLEASE USE: Real-CUGAN or Real-ESRGAN for high-quality anime upscaling.')})")
                     else:
