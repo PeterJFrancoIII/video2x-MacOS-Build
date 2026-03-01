@@ -28,6 +28,7 @@ with open(DEBUG_LOG, "w") as f:
 class Api:
     def __init__(self):
         self.window = None
+        self.process = None
 
     def select_file(self):
         debug_log("Opening file dialog...")
@@ -39,16 +40,34 @@ class Api:
             return {"path": path, "filename": filename}
         return None
 
+    def select_output_file(self):
+        debug_log("Opening save file dialog...")
+        result = self.window.create_file_dialog(webview.SAVE_DIALOG, file_types=("Video Files (*.mp4;*.mkv)", "Image Files (*.png;*.jpg)"))
+        debug_log(f"Save dialog result: {result}")
+        if result:
+            return result
+        return None
+
+    def stop_upscale(self):
+        if self.process:
+            debug_log("Stopping upscale process...")
+            self.process.terminate()
+            self.process = None
+            return True
+        return False
+
     def run_upscale(self, params):
         debug_log(f"run_upscale called with params: {params}")
         input_path = params.get("input")
+        output_path = params.get("output")
         processor = params.get("processor", "realesrgan")
         scale = params.get("scale", 2)
         extension = params.get("extension", "png")
 
         # Determine output path
-        base, _ = os.path.splitext(input_path)
-        output_path = f"{base}_upscaled.{extension}"
+        if not output_path:
+            base, _ = os.path.splitext(input_path)
+            output_path = f"{base}_upscaled.{extension}"
 
         # Standard Video2X command
         cmd = [
@@ -107,7 +126,7 @@ class Api:
             last_frame = -1
             
             try:
-                process = subprocess.Popen(
+                self.process = subprocess.Popen(
                     cmd,
                     stdout=subprocess.PIPE,
                     stderr=subprocess.STDOUT,
@@ -117,8 +136,8 @@ class Api:
                     cwd=os.path.dirname(VIDEO2X_EXEC)
                 )
 
-                if process.stdout:
-                    for line in process.stdout:
+                if self.process.stdout:
+                    for line in self.process.stdout:
                         clean_line = line.strip()
                         debug_log(f"STDOUT: {clean_line}")
                         self.window.evaluate_js(f"onLog({json.dumps(clean_line)})")
@@ -151,17 +170,23 @@ class Api:
                                 # but we stop the watchdog so we don't spam.
                                 last_progress_time = time.time() + 3600 
 
-                process.wait()
-                debug_log(f"Process finished with code: {process.returncode}")
-                if process.returncode != 0:
+                self.process.wait()
+                return_code = self.process.returncode
+                self.process = None
+                
+                debug_log(f"Process finished with code: {return_code}")
+                if return_code != 0:
                     # Detect common FFmpeg/libplacebo errors
                     log_content = open(DEBUG_LOG).read()
                     if "Filter 'libplacebo' not found" in log_content:
                          self.window.evaluate_js(f"onLog({json.dumps('[error] SYSTEM LIMITATION: Your FFmpeg does not support libplacebo (Anime4k).')})")
                          self.window.evaluate_js(f"onLog({json.dumps('[tip] PLEASE USE: Real-CUGAN or Real-ESRGAN for high-quality anime upscaling.')})")
                     else:
-                        self.window.evaluate_js(f"onLog({json.dumps(f'[error] Process exited with code {process.returncode}')})")
-                return process.returncode == 0
+                        self.window.evaluate_js(f"onLog({json.dumps(f'[error] Process exited with code {return_code}')})")
+                
+                # Signal completion to UI
+                self.window.evaluate_js(f"onFinished({json.dumps(return_code == 0)})")
+                return return_code == 0
             except Exception as e:
                 debug_log(f"RUNNER EXCEPTION: {str(e)}")
                 self.window.evaluate_js(f"onLog({json.dumps(f'[error] Runner exception: {str(e)}')})")

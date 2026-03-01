@@ -285,6 +285,11 @@
         </div>
 
         <div class="section">
+            <div class="label">Output Location (Optional)</div>
+            <button class="btn btn-secondary" onclick="selectOutput()">Select Output</button>
+        </div>
+
+        <div class="section">
             <div class="label">Scale / Multiplier</div>
             <select id="scale">
                 <option value="2">2x</option>
@@ -328,6 +333,14 @@
             </svg>
             START UPSCALING
         </button>
+
+        <button id="stop-btn" class="btn hidden" style="background: var(--error); color: #fff; margin-top: -15px;"
+            onclick="stopProcess()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="6" y="6" width="12" height="12" />
+            </svg>
+            STOP
+        </button>
     </div>
 
     <div class="main">
@@ -335,6 +348,7 @@
             <div class="file-info">
                 <div class="filename" id="display-name">No file selected</div>
                 <div class="file-path" id="display-path">-</div>
+                <div class="file-path" id="display-output" style="color: var(--secondary); margin-top: 5px;"></div>
             </div>
         </div>
 
@@ -370,6 +384,7 @@
 
     <script>
         let inputPath = null;
+        let outputPath = null;
 
         function checkWarnings() {
             const processor = document.getElementById('processor').value;
@@ -403,6 +418,22 @@
             }
         }
 
+        async function selectOutput() {
+            const result = await pywebview.api.select_output_file();
+            if (result) {
+                outputPath = result;
+                document.getElementById('display-output').innerText = "Output: " + result;
+                log(`Selected output: ${result}`);
+            }
+        }
+
+        async function stopProcess() {
+            const success = await pywebview.api.stop_upscale();
+            if (success) {
+                log("Stop signal sent to process...", "error");
+            }
+        }
+
         async function startProcess() {
             if (!inputPath) {
                 log("Error: No input file selected!", "error");
@@ -416,24 +447,29 @@
             document.getElementById('progress-card').classList.remove('hidden');
             document.getElementById('start-btn').disabled = true;
             document.getElementById('start-btn').innerText = "PROCESSING...";
+            document.getElementById('stop-btn').classList.remove('hidden');
 
             log(`Starting ${processor} upscale (${scale}x)...`);
 
-            const success = await pywebview.api.run_upscale({
+            await pywebview.api.run_upscale({
                 input: inputPath,
+                output: outputPath,
                 scale: parseInt(scale),
                 processor: processor,
                 extension: ext
             });
+        }
 
+        function onFinished(success) {
             if (success) {
                 log("Upscaling finished successfully!", "success");
             } else {
-                log("Upscaling failed. Check logs for details.", "error");
+                log("Upscaling finished or was stopped.", "error");
             }
 
             document.getElementById('start-btn').disabled = false;
             document.getElementById('start-btn').innerText = "START UPSCALING";
+            document.getElementById('stop-btn').classList.add('hidden');
         }
 
         // Called from Python
