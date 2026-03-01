@@ -6,6 +6,9 @@
 #else
 #include <unistd.h>
 #include <cstring>
+#ifdef __APPLE__
+#include <mach-o/dyld.h>
+#endif
 #endif
 
 #include <spdlog/spdlog.h>
@@ -40,8 +43,20 @@ static std::filesystem::path get_executable_directory() {
     std::filesystem::path execpath(filepath.data());
     return execpath.parent_path();
 }
-#else   // _WIN32
+#else  // _WIN32
 static std::filesystem::path get_executable_directory() {
+#if defined(__APPLE__) || defined(__MACH__)
+    logger()->debug("Identifying executable path on macOS...");
+    uint32_t size = 0;
+    _NSGetExecutablePath(nullptr, &size);
+    std::vector<char> buffer(size);
+    if (_NSGetExecutablePath(buffer.data(), &size) != 0) {
+        logger()->error("Error getting executable path via _NSGetExecutablePath");
+        return std::filesystem::path();
+    }
+    std::filesystem::path filepath(buffer.data());
+#else
+    logger()->debug("Identifying executable path on Linux...");
     std::error_code ec;
     std::filesystem::path filepath = std::filesystem::read_symlink("/proc/self/exe", ec);
 
@@ -49,7 +64,7 @@ static std::filesystem::path get_executable_directory() {
         logger()->error("Error reading /proc/self/exe: {}", ec.message());
         return std::filesystem::path();
     }
-
+#endif
     return filepath.parent_path();
 }
 #endif  // _WIN32
@@ -86,12 +101,17 @@ std::optional<std::filesystem::path> find_resource(const std::filesystem::path& 
     // 3. The Linux standard local data directory
     candidates.push_back(std::filesystem::path("/usr/local/share/video2x") / resource);
 
-    // 4. The Linux standard data directory
+    // 4. The Linux/macOS standard data directory
     candidates.push_back(std::filesystem::path("/usr/share/video2x") / resource);
 #endif
 
-    // 5. The executable's parent directory
-    candidates.push_back(get_executable_directory() / resource);
+    // 5. The executable's parent directory (bin)
+    std::filesystem::path exec_dir = get_executable_directory();
+    if (!exec_dir.empty()) {
+        candidates.push_back(exec_dir / resource);
+        // 6. Installed share directory relative to bin (../share/video2x)
+        candidates.push_back(exec_dir.parent_path() / "share" / "video2x" / resource);
+    }
 
     // Iterate over the candidate directories and return the first readable file
     for (const auto& candidate : candidates) {

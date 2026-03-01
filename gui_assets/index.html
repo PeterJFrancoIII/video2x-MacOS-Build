@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video2X - Premium Upscaling</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #bb86fc;
+            --secondary: #03dac6;
+            --background: #121212;
+            --surface: rgba(255, 255, 255, 0.05);
+            --glass: rgba(255, 255, 255, 0.1);
+            --text: #e0e0e0;
+            --text-muted: #b0b0b0;
+            --error: #cf6679;
+            --success: #b9fbc0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f0f13 0%, #1a1a2e 100%);
+            color: var(--text);
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* Sidebar Settings */
+        .sidebar {
+            width: 320px;
+            background: var(--surface);
+            backdrop-filter: blur(20px);
+            border-right: 1px solid var(--glass);
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            gap: 25px;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        select,
+        input {
+            background: var(--glass);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: border 0.3s ease;
+        }
+
+        select:focus,
+        input:focus {
+            border-color: var(--primary);
+        }
+
+        .btn {
+            padding: 14px;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #000;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(187, 134, 252, 0.4);
+        }
+
+        .btn-secondary {
+            background: var(--glass);
+            color: var(--text);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main Area */
+        .main {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            overflow-y: auto;
+        }
+
+        .file-status {
+            background: var(--surface);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass);
+            padding: 25px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .file-info {
+            flex: 1;
+        }
+
+        .filename {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 4px;
+            word-break: break-all;
+        }
+
+        .file-path {
+            font-size: 12px;
+            color: var(--text-muted);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 500px;
+        }
+
+        .progress-container {
+            background: var(--surface);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass);
+            padding: 25px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .progress-bar-bg {
+            height: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            width: 0%;
+            transition: width 0.3s ease;
+            box-shadow: 0 0 10px var(--primary);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: var(--glass);
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .stat-val {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .log-area {
+            flex: 1;
+            background: #000;
+            border-radius: 12px;
+            padding: 15px;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 11px;
+            color: #ccc;
+            overflow-y: scroll;
+            line-height: 1.5;
+            border: 1px solid var(--glass);
+        }
+
+        .log-entry {
+            margin-bottom: 2px;
+        }
+
+        .log-info {
+            color: #888;
+        }
+
+        .log-error {
+            color: var(--error);
+        }
+
+        .log-success {
+            color: var(--success);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--glass);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">VIDEO2X</div>
+
+        <div class="section">
+            <div class="label">Input</div>
+            <button class="btn btn-secondary" onclick="selectInput()">Select File</button>
+        </div>
+
+        <div class="section">
+            <div class="label">Scale / Multiplier</div>
+            <select id="scale">
+                <option value="2">2x</option>
+                <option value="3">3x</option>
+                <option value="4">4x</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <div class="label">Processor</div>
+            <select id="processor">
+                <option value="realesrgan" selected>Real-ESRGAN (Recommended)</option>
+                <option value="realcugan">Real-CUGAN (Anime Optimized)</option>
+                <option value="rife">RIFE (Frame Interpolation)</option>
+                <option value="anime4k">Anime4k (libplacebo)</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <div class="label">Output Extension</div>
+            <select id="ext">
+                <option value="png">PNG (Lossless)</option>
+                <option value="jpg">JPG</option>
+                <option value="mp4">MP4 (Video)</option>
+            </select>
+        </div>
+
+        <div style="flex: 1"></div>
+
+        <button id="start-btn" class="btn btn-primary" onclick="startProcess()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+            </svg>
+            START UPSCALING
+        </button>
+    </div>
+
+    <div class="main">
+        <div id="file-card" class="file-status hidden">
+            <div class="file-info">
+                <div class="filename" id="display-name">No file selected</div>
+                <div class="file-path" id="display-path">-</div>
+            </div>
+        </div>
+
+        <div id="progress-card" class="progress-container hidden">
+            <div style="display: flex; justify-content: space-between; font-weight: 600;">
+                <span>Processing...</span>
+                <span id="progress-percent">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div id="progress-fill" class="progress-bar-fill"></div>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="label">FPS</div>
+                    <div id="stat-fps" class="stat-val">0.0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Elapsed</div>
+                    <div id="stat-elapsed" class="stat-val">00:00:00</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Time Left</div>
+                    <div id="stat-remaining" class="stat-val">--:--:--</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="log-area" id="logs">
+            <div class="log-entry log-info">Welcome to Video2X macOS Build.</div>
+            <div class="log-entry log-info">Ready to process. Please select a file.</div>
+        </div>
+    </div>
+
+    <script>
+        let inputPath = null;
+
+        function log(msg, type = 'info') {
+            const logs = document.getElementById('logs');
+            const entry = document.createElement('div');
+            entry.className = `log-entry log-${type}`;
+            entry.innerText = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            logs.appendChild(entry);
+            logs.scrollTop = logs.scrollHeight;
+        }
+
+        async function selectInput() {
+            const result = await pywebview.api.select_file();
+            if (result) {
+                inputPath = result.path;
+                document.getElementById('file-card').classList.remove('hidden');
+                document.getElementById('display-name').innerText = result.filename;
+                document.getElementById('display-path').innerText = result.path;
+                log(`Selected input: ${result.filename}`);
+            }
+        }
+
+        async function startProcess() {
+            if (!inputPath) {
+                log("Error: No input file selected!", "error");
+                return;
+            }
+
+            const scale = document.getElementById('scale').value;
+            const processor = document.getElementById('processor').value;
+            const ext = document.getElementById('ext').value;
+
+            document.getElementById('progress-card').classList.remove('hidden');
+            document.getElementById('start-btn').disabled = true;
+            document.getElementById('start-btn').innerText = "PROCESSING...";
+
+            log(`Starting ${processor} upscale (${scale}x)...`);
+
+            const success = await pywebview.api.run_upscale({
+                input: inputPath,
+                scale: parseInt(scale),
+                processor: processor,
+                extension: ext
+            });
+
+            if (success) {
+                log("Upscaling finished successfully!", "success");
+            } else {
+                log("Upscaling failed. Check logs for details.", "error");
+            }
+
+            document.getElementById('start-btn').disabled = false;
+            document.getElementById('start-btn').innerText = "START UPSCALING";
+        }
+
+        // Called from Python
+        function updateProgress(data) {
+            if (data.percent !== undefined) {
+                document.getElementById('progress-percent').innerText = `${data.percent}%`;
+                document.getElementById('progress-fill').style.width = `${data.percent}%`;
+            }
+            if (data.fps) document.getElementById('stat-fps').innerText = data.fps;
+            if (data.elapsed) document.getElementById('stat-elapsed').innerText = data.elapsed;
+            if (data.remaining) document.getElementById('stat-remaining').innerText = data.remaining;
+        }
+
+        function onLog(msg) {
+            if (msg.includes("[error]")) log(msg.split("]")[1] || msg, 'error');
+            else if (msg.includes("[info]")) log(msg.split("]")[1] || msg, 'info');
+            else log(msg, 'info');
+        }
+    </script>
+</body>
+
+</html>

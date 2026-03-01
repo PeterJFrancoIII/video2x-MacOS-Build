@@ -1,14 +1,36 @@
 #include "vulkan_utils.h"
 
 #include <iostream>
+#include <string>
 #include <vector>
 
 #include <libvideo2x/logger_manager.h>
 
 static int enumerate_vulkan_devices(VkInstance* instance, std::vector<VkPhysicalDevice>& devices) {
+    // Check for portability enumeration extension
+    uint32_t extension_count = 0;
+    vkEnumerateInstanceExtensionProperties(nullptr, &extension_count, nullptr);
+    std::vector<VkExtensionProperties> available_extensions(extension_count);
+    vkEnumerateInstanceExtensionProperties(nullptr, &extension_count, available_extensions.data());
+
+    std::vector<const char*> enabled_extensions;
+    bool portability_enumeration_supported = false;
+    for (const auto& ext : available_extensions) {
+        if (std::string(ext.extensionName) == "VK_KHR_portability_enumeration") {
+            portability_enumeration_supported = true;
+            enabled_extensions.push_back("VK_KHR_portability_enumeration");
+            break;
+        }
+    }
+
     // Create a Vulkan instance
     VkInstanceCreateInfo create_info{};
     create_info.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
+    if (portability_enumeration_supported) {
+        create_info.flags |= VK_INSTANCE_CREATE_ENUMERATE_PORTABILITY_BIT_KHR;
+    }
+    create_info.enabledExtensionCount = static_cast<uint32_t>(enabled_extensions.size());
+    create_info.ppEnabledExtensionNames = enabled_extensions.data();
 
     VkResult result = vkCreateInstance(&create_info, nullptr, instance);
     if (result != VK_SUCCESS) {
