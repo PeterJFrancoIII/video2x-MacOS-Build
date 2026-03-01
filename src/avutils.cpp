@@ -136,7 +136,6 @@ AVPixelFormat get_encoder_default_pix_fmt(const AVCodec* encoder, AVPixelFormat 
     return best_pix_fmt;
 }
 
-[[gnu::target_clones("arch=x86-64-v4", "arch=x86-64-v3", "default")]]
 float get_frame_diff(AVFrame* frame1, AVFrame* frame2) {
     if (!frame1 || !frame2) {
         logger()->error("Invalid frame(s) provided for comparison");
