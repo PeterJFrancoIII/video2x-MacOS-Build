@@ -1,0 +1,4 @@
+[2026-03-01 01:36:41] [info] Video2X version 6.4.0
+[2026-03-01 01:36:41] [info] Processing file: /Users/computer/.gemini/antigravity/brain/e3900238-b306-4421-82e7-b37f3aa2c054/test_input_image_1772346976771.png
+[2026-03-01 01:36:41] [error] Failed to create Vulkan instance.
+[2026-03-01 01:36:41] [warning] Unable to validate Vulkan device ID.

@@ -1,0 +1,18 @@
+--- Video2X GUI Debug Log Start ---
+[Sun Mar  1 02:36:01 2026] Opening file dialog...
+[Sun Mar  1 02:36:04 2026] Dialog result: ('/Users/computer/Downloads/[pseudo] Trigun - 01 - The $$60 Billion Man [540p] [h.265].mkv',)
+[Sun Mar  1 02:36:05 2026] run_upscale called with params: {'input': '/Users/computer/Downloads/[pseudo] Trigun - 01 - The $$60 Billion Man [540p] [h.265].mkv', 'scale': 2, 'processor': 'anime4k', 'extension': 'mp4'}
+[Sun Mar  1 02:36:05 2026] Running ffprobe: ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 /Users/computer/Downloads/[pseudo] Trigun - 01 - The $$60 Billion Man [540p] [h.265].mkv
+[Sun Mar  1 02:36:05 2026] ffprobe output: 720x544
+[Sun Mar  1 02:36:05 2026] Executing command: /Users/computer/Video2X/build/video2x-install/bin/video2x -i /Users/computer/Downloads/[pseudo] Trigun - 01 - The $$60 Billion Man [540p] [h.265].mkv -o /Users/computer/Downloads/[pseudo] Trigun - 01 - The $$60 Billion Man [540p] [h.265]_upscaled.mp4 -p libplacebo --no-copy-streams -w 1440 -h 1088 --libplacebo-shader anime4k-v4-a
+[Sun Mar  1 02:36:05 2026] STDOUT: [2026-03-01 02:36:05] [info] Video2X version 6.4.0
+[Sun Mar  1 02:36:05 2026] STDOUT: [2026-03-01 02:36:05] [info] Processing file: /Users/computer/Downloads/[pseudo] Trigun - 01 - The $$60 Billion Man [540p] [h.265].mkv
+[Sun Mar  1 02:36:05 2026] STDOUT: [2026-03-01 02:36:05] [info] Using Vulkan device: Apple M3 Max (0xf070209)
+[Sun Mar  1 02:36:05 2026] STDOUT: [2026-03-01 02:36:05] [info] Press [space] to pause/resume, [q] to abort.
+[Sun Mar  1 02:36:05 2026] STDOUT: [2026-03-01 02:36:05] [info] [FFmpeg] [libx264 @ 0x7f8daef0fd00] using SAR=1/1
+[Sun Mar  1 02:36:05 2026] STDOUT: [2026-03-01 02:36:05] [info] [FFmpeg] [libx264 @ 0x7f8daef0fd00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2
+[Sun Mar  1 02:36:05 2026] STDOUT: [2026-03-01 02:36:05] [info] [FFmpeg] [libx264 @ 0x7f8daef0fd00] profile High 10, level 4.0, 4:2:0, 10-bit
+[Sun Mar  1 02:36:05 2026] STDOUT: [2026-03-01 02:36:05] [info] [FFmpeg] [libx264 @ 0x7f8daef0fd00] 264 - core 165 r3222 b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=21 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=23 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=81 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[Sun Mar  1 02:36:05 2026] STDOUT: [2026-03-01 02:36:05] [warning] Estimating the total number of frames using duration * fps
+[Sun Mar  1 02:36:05 2026] STDOUT: 
+[Sun Mar  1 02:36:06 2026] STDOUT: [Kframe=1/35478 (0.00%); fps=inf; elapsed=00:00:00; remaining=00:00:00

@@ -1,0 +1,87 @@
+[2026-03-01 02:38:45] [info] Video2X version 6.4.0
+[2026-03-01 02:38:45] [info] Processing file: testsrc.mp4
+[2026-03-01 02:38:45] [info] Using Vulkan device: Apple M3 Max (0xf070209)
+[2026-03-01 02:38:45] [info] Press [space] to pause/resume, [q] to abort.
+[2026-03-01 02:38:45] [debug] [FFmpeg] [AVFormatContext @ 0x7fa2cc20c280] Opening 'testsrc.mp4' for reading
+[2026-03-01 02:38:45] [debug] [FFmpeg] [file @ 0x7fa2cc20c180] Setting default whitelist 'file,crypto,data'
+[2026-03-01 02:38:45] [debug] [FFmpeg] [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2cc20c280] Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+[2026-03-01 02:38:45] [debug] [FFmpeg] [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2cc20c280] ISO: File Type Major Brand: isom
+[2026-03-01 02:38:45] [debug] [FFmpeg] [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2cc20c280] Unknown dref type 0x206c7275 size 12
+[2026-03-01 02:38:45] [debug] [FFmpeg] [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2cc20c280] Processing st: 0, edit list 0 - media time: 1024, duration: 76800
+[2026-03-01 02:38:45] [debug] [FFmpeg] [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2cc20c280] Offset DTS by 1024 to make first pts zero.
+[2026-03-01 02:38:45] [debug] [FFmpeg] [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2cc20c280] Setting codecpar->delay to 2 for stream st: 0
+[2026-03-01 02:38:45] [debug] [FFmpeg] [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2cc20c280] Before avformat_find_stream_info() pos: 32323 bytes read:32323 seeks:0 nb_streams:1
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc20ce80] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc20ce80] Decoding VUI
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc20ce80] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc20ce80] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc20ce80] Decoding VUI
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc20ce80] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc20ce80] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc20ce80] nal_unit_type: 5(IDR), nal_ref_idc: 3
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc20ce80] Format yuv444p chosen by get_format().
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc20ce80] Reinit context to 640x480, pix_fmt: yuv444p
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc20ce80] no picture 
+[2026-03-01 02:38:45] [debug] [FFmpeg] [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2cc20c280] All info found
+[2026-03-01 02:38:45] [debug] [FFmpeg] [mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2cc20c280] After avformat_find_stream_info() pos: 5837 bytes read:32323 seeks:0 frames:1
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] nal_unit_type: 7(SPS), nal_ref_idc: 3
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] Decoding VUI
+[2026-03-01 02:38:45] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] nal_unit_type: 8(PPS), nal_ref_idc: 3
+[2026-03-01 02:38:45] [debug] Auto-selected pixel format: yuv444p
+[2026-03-01 02:38:45] [debug] [FFmpeg] [libx264 @ 0x7fa2cc10a4c0] using mv_range_thread = 24
+[2026-03-01 02:38:45] [info] [FFmpeg] [libx264 @ 0x7fa2cc10a4c0] using SAR=1/1
+[2026-03-01 02:38:45] [info] [FFmpeg] [libx264 @ 0x7fa2cc10a4c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2
+[2026-03-01 02:38:45] [info] [FFmpeg] [libx264 @ 0x7fa2cc10a4c0] profile High 4:4:4 Predictive, level 3.2, 4:4:4, 8-bit
+[2026-03-01 02:38:45] [info] [FFmpeg] [libx264 @ 0x7fa2cc10a4c0] 264 - core 165 r3222 b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=4 threads=21 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[2026-03-01 02:38:45] [debug] [FFmpeg] [file @ 0x7fa2cc11a000] Setting default whitelist 'file,crypto,data'
+[2026-03-01 02:38:45] [debug] Identifying executable path on macOS...
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Supported layers:
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Using instance extension VK_EXT_layer_settings
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Using instance extension VK_KHR_portability_enumeration
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] GPU listing:
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540]     0: Apple M3 Max (integrated) (0xf070209)
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Device 0 selected: Apple M3 Max (integrated) (0xf070209)
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Using device extension VK_KHR_portability_subset
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Using device extension VK_KHR_push_descriptor
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Using device extension VK_EXT_shader_atomic_float
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Using device extension VK_KHR_shader_subgroup_rotate
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Using device extension VK_KHR_shader_expect_assume
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Using device extension VK_EXT_external_memory_host
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Queue families:
+[2026-03-01 02:38:45] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540]     0: graphics compute transfer (queues: 1)
+[2026-03-01 02:38:46] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Using device: Apple M3 Max
+[2026-03-01 02:38:46] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Alignments:
+[2026-03-01 02:38:46] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540]     optimalBufferCopyRowPitchAlignment: 1
+[2026-03-01 02:38:46] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540]     minMemoryMapAlignment:              64
+[2026-03-01 02:38:46] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540]     nonCoherentAtomSize:                16
+[2026-03-01 02:38:46] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540]     minImportedHostPointerAlignment:    4096
+[2026-03-01 02:38:46] [debug] [FFmpeg] [Vulkan @ 0x7fa2cc11c540] Using queue family 0 (queues: 1) for graphics compute transfers
+[2026-03-01 02:38:46] [debug] Buffer source args: video_size=640x480:pix_fmt=5:time_base=1/15360:frame_rate=30/1:pixel_aspect=1/1:colorspace=2:range=0
+[2026-03-01 02:38:46] [debug] [FFmpeg] detected 14 logical cores
+[2026-03-01 02:38:46] [debug] [FFmpeg] [in @ 0x7fa29fb041c0] Setting 'video_size' to value '640x480'
+[2026-03-01 02:38:46] [debug] [FFmpeg] [in @ 0x7fa29fb041c0] Setting 'pix_fmt' to value '5'
+[2026-03-01 02:38:46] [debug] [FFmpeg] [in @ 0x7fa29fb041c0] Setting 'time_base' to value '1/15360'
+[2026-03-01 02:38:46] [debug] [FFmpeg] [in @ 0x7fa29fb041c0] Setting 'frame_rate' to value '30/1'
+[2026-03-01 02:38:46] [debug] [FFmpeg] [in @ 0x7fa29fb041c0] Setting 'pixel_aspect' to value '1/1'
+[2026-03-01 02:38:46] [debug] [FFmpeg] [in @ 0x7fa29fb041c0] Setting 'colorspace' to value '2'
+[2026-03-01 02:38:46] [debug] [FFmpeg] [in @ 0x7fa29fb041c0] Setting 'range' to value '0'
+[2026-03-01 02:38:46] [debug] [FFmpeg] [in @ 0x7fa29fb041c0] w:640 h:480 pixfmt:yuv444p tb:1/15360 fr:30/1 sar:1/1 csp:unknown range:unknown
+[2026-03-01 02:38:46] [debug] [FFmpeg] [libplacebo @ 0x7fa29fc04540] Setting 'w' to value '1280'
+[2026-03-01 02:38:46] [debug] [FFmpeg] [libplacebo @ 0x7fa29fc04540] Setting 'h' to value '960'
+[2026-03-01 02:38:46] [debug] [FFmpeg] [libplacebo @ 0x7fa29fc04540] Setting 'custom_shader_path' to value 'models/libplacebo/anime4k-v4-a.glsl'
+[2026-03-01 02:38:46] [debug] [FFmpeg] [AVFilterGraph @ 0x7fa29fc04300] query_formats: 3 queried, 6 merged, 0 already done, 0 delayed
+[2026-03-01 02:38:46] [debug] Estimating the total number of frames to process
+[2026-03-01 02:38:46] [debug] Read total number of frames from 'nb_frames': 150
+[2026-03-01 02:38:46] [debug] 150 frames to process
+[2026-03-01 02:38:46] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] nal_unit_type: 6(SEI), nal_ref_idc: 0
+[2026-03-01 02:38:46] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] nal_unit_type: 5(IDR), nal_ref_idc: 3
+[2026-03-01 02:38:46] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] Format yuv444p chosen by get_format().
+[2026-03-01 02:38:46] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] Reinit context to 640x480, pix_fmt: yuv444p
+[2026-03-01 02:38:46] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] no picture 
+[2026-03-01 02:38:46] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[2026-03-01 02:38:46] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] no picture 
+[2026-03-01 02:38:46] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+[2026-03-01 02:38:46] [debug] [FFmpeg] [in @ 0x7fa29fb041c0] video frame properties congruent with link at pts_time: 0
+[2026-03-01 02:38:46] [debug] Processed frame 1/150
+[2026-03-01 02:38:46] [debug] [FFmpeg] [h264 @ 0x7fa2cc116380] nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+[Kframe=1/150 (0.67%); fps=inf; elapsed=00:00:00; remaining=00:00:00

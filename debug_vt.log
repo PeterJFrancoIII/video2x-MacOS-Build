@@ -1,0 +1,120 @@
+[Vulkan Loader] INFO:           Vulkan Loader Version 1.4.341
+[2026-03-01 02:37:41] [info] Video2X version 6.4.0
+[2026-03-01 02:37:41] [info] Processing file: /Users/computer/Downloads/[pseudo] Trigun - 01 - The 7449660 Billion Man [540p] [h.265].mkv
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] INFO:           Portability enumeration bit was set, enumerating portability drivers.
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+[2026-03-01 02:37:41] [info] Using Vulkan device: Apple M3 Max (0xf070209)
+[2026-03-01 02:37:41] [info] Press [space] to pause/resume, [q] to abort.
+[2026-03-01 02:37:41] [debug] [FFmpeg] [AVFormatContext @ 0x7f81db9048c0] Opening '/Users/computer/Downloads/[pseudo] Trigun - 01 - The 7449660 Billion Man [540p] [h.265].mkv' for reading
+[2026-03-01 02:37:41] [debug] [FFmpeg] [file @ 0x7f81db905140] Setting default whitelist 'file,crypto,data'
+[2026-03-01 02:37:41] [error] Could not open input file '/Users/computer/Downloads/[pseudo] Trigun - 01 - The 7449660 Billion Man [540p] [h.265].mkv'
+[2026-03-01 02:37:41] [critical] Failed to initialize decoder: No such file or directory
+[2026-03-01 02:37:42] [critical] Video processing failed with error code -2

@@ -1,0 +1,739 @@
+[Vulkan Loader] INFO:           Vulkan Loader Version 1.4.341
+[2026-03-01 02:38:11] [info] Video2X version 6.4.0
+[2026-03-01 02:38:11] [info] Processing file: /Users/computer/Downloads/[pseudo] Trigun - 01 - The $$60 Billion Man [540p] [h.265].mkv
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] INFO:           Portability enumeration bit was set, enumerating portability drivers.
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+[2026-03-01 02:38:11] [info] Using Vulkan device: Apple M3 Max (0xf070209)
+[2026-03-01 02:38:11] [info] Press [space] to pause/resume, [q] to abort.
+[2026-03-01 02:38:11] [debug] [FFmpeg] [AVFormatContext @ 0x7f9491f1cc80] Opening '/Users/computer/Downloads/[pseudo] Trigun - 01 - The $$60 Billion Man [540p] [h.265].mkv' for reading
+[2026-03-01 02:38:11] [debug] [FFmpeg] [file @ 0x7f9491f19100] Setting default whitelist 'file,crypto,data'
+[2026-03-01 02:38:11] [debug] [FFmpeg] [matroska,webm @ 0x7f9491f1cc80] Format matroska,webm probed with size=2048 and score=100
+[2026-03-01 02:38:11] [debug] [FFmpeg] st:0 removing common factor 1000000 from timebase
+[2026-03-01 02:38:11] [debug] [FFmpeg] st:1 removing common factor 1000000 from timebase
+[2026-03-01 02:38:11] [debug] [FFmpeg] st:2 removing common factor 1000000 from timebase
+[2026-03-01 02:38:11] [debug] [FFmpeg] st:3 removing common factor 1000000 from timebase
+[2026-03-01 02:38:11] [debug] [FFmpeg] [matroska,webm @ 0x7f9491f1cc80] Before avformat_find_stream_info() pos: 55011 bytes read:65732 seeks:2 nb_streams:5
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492806400] nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492806400] Decoding VPS
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492806400] Main 10 profile bitstream
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492806400] nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492806400] Decoding SPS
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492806400] Main 10 profile bitstream
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492806400] Decoding VUI
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492806400] nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492806400] Decoding PPS
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492806400] nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492806400] Decoding SEI
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_inv_float_c - type: mdct_float, len: 64, factors[2]: [2, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft32_ns_float_c - type: fft_float, len: 32, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_inv_float_c - type: mdct_float, len: 64, factors[2]: [2, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft32_ns_float_c - type: fft_float, len: 32, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_pfa_3xM_inv_float_c - type: mdct_float, len: 96, factors[2]: [3, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft16_ns_float_c - type: fft_float, len: 16, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_pfa_15xM_inv_float_c - type: mdct_float, len: 120, factors[2]: [15, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft4_fwd_float_sse2 - type: fft_float, len: 4, factor: 2, flags: [aligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_inv_float_c - type: mdct_float, len: 128, factors[2]: [2, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft64_ns_float_c - type: fft_float, len: 64, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_pfa_15xM_inv_float_c - type: mdct_float, len: 480, factors[2]: [15, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft16_ns_float_c - type: fft_float, len: 16, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_inv_float_c - type: mdct_float, len: 512, factors[2]: [2, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft256_ns_float_c - type: fft_float, len: 256, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_pfa_3xM_inv_float_c - type: mdct_float, len: 768, factors[2]: [3, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft128_ns_float_c - type: fft_float, len: 128, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_pfa_15xM_inv_float_c - type: mdct_float, len: 960, factors[2]: [15, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft32_ns_float_c - type: fft_float, len: 32, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_inv_float_c - type: mdct_float, len: 1024, factors[2]: [2, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft512_ns_float_c - type: fft_float, len: 512, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_fwd_float_c - type: mdct_float, len: 1024, factors[2]: [2, any], flags: [unaligned, out_of_place, fwd_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft512_ns_float_c - type: fft_float, len: 512, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_inv_float_c - type: mdct_float, len: 64, factors[2]: [2, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft32_ns_float_c - type: fft_float, len: 32, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_inv_float_c - type: mdct_float, len: 64, factors[2]: [2, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft32_ns_float_c - type: fft_float, len: 32, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_pfa_3xM_inv_float_c - type: mdct_float, len: 96, factors[2]: [3, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft16_ns_float_c - type: fft_float, len: 16, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_pfa_15xM_inv_float_c - type: mdct_float, len: 120, factors[2]: [15, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft4_fwd_float_sse2 - type: fft_float, len: 4, factor: 2, flags: [aligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_inv_float_c - type: mdct_float, len: 128, factors[2]: [2, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft64_ns_float_c - type: fft_float, len: 64, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_pfa_15xM_inv_float_c - type: mdct_float, len: 480, factors[2]: [15, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft16_ns_float_c - type: fft_float, len: 16, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_inv_float_c - type: mdct_float, len: 512, factors[2]: [2, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft256_ns_float_c - type: fft_float, len: 256, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_pfa_3xM_inv_float_c - type: mdct_float, len: 768, factors[2]: [3, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft128_ns_float_c - type: fft_float, len: 128, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_pfa_15xM_inv_float_c - type: mdct_float, len: 960, factors[2]: [15, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft32_ns_float_c - type: fft_float, len: 32, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_inv_float_c - type: mdct_float, len: 1024, factors[2]: [2, any], flags: [unaligned, out_of_place, inv_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft512_ns_float_c - type: fft_float, len: 512, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] Transform tree:
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] mdct_fwd_float_c - type: mdct_float, len: 1024, factors[2]: [2, any], flags: [unaligned, out_of_place, fwd_only]
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg]     
+[2026-03-01 02:38:11] [debug] [FFmpeg] fft512_ns_float_c - type: fft_float, len: 512, factor: 2, flags: [unaligned, inplace, out_of_place, preshuf]
+[2026-03-01 02:38:11] [debug] [FFmpeg] [matroska,webm @ 0x7f9491f1cc80] first_dts 0 not matching first dts NOPTS (pts 0, duration 41) in the queue
+[2026-03-01 02:38:11] [debug] [FFmpeg] [matroska,webm @ 0x7f9491f1cc80] All info found
+[2026-03-01 02:38:11] [debug] [FFmpeg] [matroska,webm @ 0x7f9491f1cc80] After avformat_find_stream_info() pos: 64584 bytes read:98500 seeks:2 frames:24
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoding VPS
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Main 10 profile bitstream
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoding SPS
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Main 10 profile bitstream
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoding VUI
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoding PPS
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoding SEI
+[2026-03-01 02:38:11] [warning] Incompatible pixel format '%s' for encoder '%s'; auto-selecting format '%s'
+[2026-03-01 02:38:11] [debug] Auto-selected pixel format: nv12
+[2026-03-01 02:38:11] [debug] [FFmpeg] [h264_videotoolbox @ 0x7f9492b11600] Init the encoder: com.apple.videotoolbox.videoencoder.ave.avc
+[2026-03-01 02:38:11] [debug] [FFmpeg] [h264_videotoolbox @ 0x7f9492b11600] Init the encoder: com.apple.videotoolbox.videoencoder.ave.avc
+[2026-03-01 02:38:11] [debug] [FFmpeg] [file @ 0x7f9492804580] Setting default whitelist 'file,crypto,data'
+[2026-03-01 02:38:11] [debug] Identifying executable path on macOS...
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Supported layers:
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Using instance extension VK_EXT_layer_settings
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Using instance extension VK_KHR_portability_enumeration
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] INFO:           Portability enumeration bit was set, enumerating portability drivers.
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] GPU listing:
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40]     0: Apple M3 Max (integrated) (0xf070209)
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Device 0 selected: Apple M3 Max (integrated) (0xf070209)
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Using device extension VK_KHR_portability_subset
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Using device extension VK_KHR_push_descriptor
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Using device extension VK_EXT_shader_atomic_float
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Using device extension VK_KHR_shader_subgroup_rotate
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Using device extension VK_KHR_shader_expect_assume
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Using device extension VK_EXT_external_memory_host
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Queue families:
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40]     0: graphics compute transfer (queues: 1)
+[Vulkan Loader] DRIVER:         vkCreateDevice layer callstack setup to:
+[Vulkan Loader] DRIVER:            <Application>
+[Vulkan Loader] DRIVER:              ||
+[Vulkan Loader] DRIVER:            <Loader>
+[Vulkan Loader] DRIVER:              ||
+[Vulkan Loader] DRIVER:            <Device>
+[Vulkan Loader] DRIVER:                Using "Apple M3 Max" with driver: "/usr/local/Cellar/molten-vk/1.4.0/lib/libMoltenVK.dylib"
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Using device: Apple M3 Max
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Alignments:
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40]     optimalBufferCopyRowPitchAlignment: 1
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40]     minMemoryMapAlignment:              64
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40]     nonCoherentAtomSize:                16
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40]     minImportedHostPointerAlignment:    4096
+[2026-03-01 02:38:11] [debug] [FFmpeg] [Vulkan @ 0x7f949281ea40] Using queue family 0 (queues: 1) for graphics compute transfers
+[2026-03-01 02:38:11] [debug] Buffer source args: video_size=720x544:pix_fmt=62:time_base=1/1000:frame_rate=24000/1001:pixel_aspect=1/1:colorspace=2:range=1
+[2026-03-01 02:38:11] [debug] [FFmpeg] detected 14 logical cores
+[2026-03-01 02:38:11] [debug] [FFmpeg] [in @ 0x7f9492837080] Setting 'video_size' to value '720x544'
+[2026-03-01 02:38:11] [debug] [FFmpeg] [in @ 0x7f9492837080] Setting 'pix_fmt' to value '62'
+[2026-03-01 02:38:11] [debug] [FFmpeg] [in @ 0x7f9492837080] Setting 'time_base' to value '1/1000'
+[2026-03-01 02:38:11] [debug] [FFmpeg] [in @ 0x7f9492837080] Setting 'frame_rate' to value '24000/1001'
+[2026-03-01 02:38:11] [debug] [FFmpeg] [in @ 0x7f9492837080] Setting 'pixel_aspect' to value '1/1'
+[2026-03-01 02:38:11] [debug] [FFmpeg] [in @ 0x7f9492837080] Setting 'colorspace' to value '2'
+[2026-03-01 02:38:11] [debug] [FFmpeg] [in @ 0x7f9492837080] Setting 'range' to value '1'
+[2026-03-01 02:38:11] [debug] [FFmpeg] [in @ 0x7f9492837080] w:720 h:544 pixfmt:yuv420p10le tb:1/1000 fr:24000/1001 sar:1/1 csp:unknown range:tv
+[2026-03-01 02:38:11] [debug] [FFmpeg] [libplacebo @ 0x7f94928372c0] Setting 'w' to value '1440'
+[2026-03-01 02:38:11] [debug] [FFmpeg] [libplacebo @ 0x7f94928372c0] Setting 'h' to value '1088'
+[2026-03-01 02:38:11] [debug] [FFmpeg] [libplacebo @ 0x7f94928372c0] Setting 'custom_shader_path' to value 'models/libplacebo/anime4k-v4-a.glsl'
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] INFO:           No valid vk_loader_settings.json file found, no loader settings will be active
+[Vulkan Loader] INFO:           Portability enumeration bit was set, enumerating portability drivers.
+[Vulkan Loader] LAYER:          Searching for implicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/implicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] LAYER:          Searching for explicit layer manifest files
+[Vulkan Loader] LAYER:             In following locations:
+[Vulkan Loader] LAYER:                /Users/computer/Video2X/build/video2x-install/bin/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.config/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/xdg/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /etc/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /Users/computer/.local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/local/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:                /usr/share/vulkan/explicit_layer.d
+[Vulkan Loader] LAYER:             Found no files
+[Vulkan Loader] DRIVER:         Searching for driver manifest files
+[Vulkan Loader] DRIVER:            In following locations:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:            Found the following files:
+[Vulkan Loader] DRIVER:               /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json
+[Vulkan Loader] DRIVER:         Found ICD manifest file /usr/local/etc/vulkan/icd.d/MoltenVK_icd.json, version 1.0.0
+[Vulkan Loader] DEBUG | DRIVER: Searching for ICD drivers named ../../../lib/libMoltenVK.dylib
+[Vulkan Loader] LAYER:          vkCreateInstance layer callstack setup to:
+[Vulkan Loader] LAYER:             <Application>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Loader>
+[Vulkan Loader] LAYER:               ||
+[Vulkan Loader] LAYER:             <Drivers>
+[Vulkan Loader] DRIVER:         vkCreateDevice layer callstack setup to:
+[Vulkan Loader] DRIVER:            <Application>
+[Vulkan Loader] DRIVER:              ||
+[Vulkan Loader] DRIVER:            <Loader>
+[Vulkan Loader] DRIVER:              ||
+[Vulkan Loader] DRIVER:            <Device>
+[Vulkan Loader] DRIVER:                Using "Apple M3 Max" with driver: "/usr/local/Cellar/molten-vk/1.4.0/lib/libMoltenVK.dylib"
+[2026-03-01 02:38:11] [debug] [FFmpeg] [AVFilterGraph @ 0x7f9492836e00] query_formats: 3 queried, 6 merged, 0 already done, 0 delayed
+[2026-03-01 02:38:11] [debug] Estimating the total number of frames to process
+[2026-03-01 02:38:11] [warning] Estimating the total number of frames using duration * fps
+[2026-03-01 02:38:11] [debug] Video duration: 1479.755s
+[2026-03-01 02:38:11] [debug] Video average frame rate: 23.976023976023978
+[2026-03-01 02:38:11] [debug] 35478 frames to process
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 19(IDR_W_RADL), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoding SPS
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Main 10 profile bitstream
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoding VUI
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoding PPS
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoding SEI
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoding SEI
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Format yuv420p10le chosen by get_format().
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoded frame with POC 0/0.
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoded frame with POC 0/1.
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Output frame with POC 0/0.
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoded frame with POC 0/6.
+[2026-03-01 02:38:11] [debug] [FFmpeg] [in @ 0x7f9492837080] video frame properties congruent with link at pts_time: 0
+[2026-03-01 02:38:11] [debug] Processed frame 1/35478
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Output frame with POC 0/1.
+[2026-03-01 02:38:11] [debug] [FFmpeg] [hevc @ 0x7f9492b05940] Decoded frame with POC 0/4.
+[Kframe=1/35478 (0.00%); fps=inf; elapsed=00:00:00; remaining=00:00:00[Kframe=1/35478 (0.00%); fps=inf; elapsed=00:00:00; remaining=00:00:00

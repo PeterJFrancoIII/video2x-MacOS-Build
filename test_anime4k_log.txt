@@ -1,0 +1,58 @@
+[2026-03-01 02:33:47] [info] Video2X version 6.4.0
+[2026-03-01 02:33:47] [info] Processing file: /Users/computer/.gemini/antigravity/brain/e3900238-b306-4421-82e7-b37f3aa2c054/test_input_image_1772346976771.png
+[2026-03-01 02:33:47] [info] Using Vulkan device: Apple M3 Max (0xf070209)
+[2026-03-01 02:33:47] [info] Press [space] to pause/resume, [q] to abort.
+[2026-03-01 02:33:47] [debug] [FFmpeg] [AVFormatContext @ 0x7faa1f304080] Opening '/Users/computer/.gemini/antigravity/brain/e3900238-b306-4421-82e7-b37f3aa2c054/test_input_image_1772346976771.png' for reading
+[2026-03-01 02:33:47] [debug] [FFmpeg] [file @ 0x7faa1f30fc00] Setting default whitelist 'file,crypto,data'
+[2026-03-01 02:33:47] [debug] [FFmpeg] [png_pipe @ 0x7faa1f304080] Format png_pipe probed with size=2048 and score=99
+[2026-03-01 02:33:47] [debug] [FFmpeg] [png_pipe @ 0x7faa1f304080] Before avformat_find_stream_info() pos: 0 bytes read:32768 seeks:0 nb_streams:1
+[2026-03-01 02:33:47] [debug] [FFmpeg] [png_pipe @ 0x7faa1f304080] After avformat_find_stream_info() pos: 355929 bytes read:355929 seeks:0 frames:1
+[2026-03-01 02:33:47] [warning] Incompatible pixel format '%s' for encoder '%s'; auto-selecting format '%s'
+[2026-03-01 02:33:47] [debug] Auto-selected pixel format: yuv444p
+[2026-03-01 02:33:47] [debug] [FFmpeg] [libx264 @ 0x7faa1f205900] using mv_range_thread = 24
+[2026-03-01 02:33:47] [info] [FFmpeg] [libx264 @ 0x7faa1f205900] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2
+[2026-03-01 02:33:47] [info] [FFmpeg] [libx264 @ 0x7faa1f205900] profile High 4:4:4 Predictive, level 4.0, 4:4:4, 8-bit
+[2026-03-01 02:33:47] [debug] Identifying executable path on macOS...
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Supported layers:
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Using instance extension VK_EXT_layer_settings
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Using instance extension VK_KHR_portability_enumeration
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] GPU listing:
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700]     0: Apple M3 Max (integrated) (0xf070209)
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Device 0 selected: Apple M3 Max (integrated) (0xf070209)
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Using device extension VK_KHR_portability_subset
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Using device extension VK_KHR_push_descriptor
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Using device extension VK_EXT_shader_atomic_float
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Using device extension VK_KHR_shader_subgroup_rotate
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Using device extension VK_KHR_shader_expect_assume
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Using device extension VK_EXT_external_memory_host
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Queue families:
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700]     0: graphics compute transfer (queues: 1)
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Using device: Apple M3 Max
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Alignments:
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700]     optimalBufferCopyRowPitchAlignment: 1
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700]     minMemoryMapAlignment:              64
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700]     nonCoherentAtomSize:                16
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700]     minImportedHostPointerAlignment:    4096
+[2026-03-01 02:33:47] [debug] [FFmpeg] [Vulkan @ 0x7faa2f820700] Using queue family 0 (queues: 1) for graphics compute transfers
+[2026-03-01 02:33:47] [debug] Buffer source args: video_size=640x640:pix_fmt=2:time_base=1/25:frame_rate=25/1:pixel_aspect=0/1:colorspace=0:range=2
+[2026-03-01 02:33:47] [debug] [FFmpeg] detected 14 logical cores
+[2026-03-01 02:33:47] [debug] [FFmpeg] [in @ 0x7faa1ef24300] Setting 'video_size' to value '640x640'
+[2026-03-01 02:33:47] [debug] [FFmpeg] [in @ 0x7faa1ef24300] Setting 'pix_fmt' to value '2'
+[2026-03-01 02:33:47] [debug] [FFmpeg] [in @ 0x7faa1ef24300] Setting 'time_base' to value '1/25'
+[2026-03-01 02:33:47] [debug] [FFmpeg] [in @ 0x7faa1ef24300] Setting 'frame_rate' to value '25/1'
+[2026-03-01 02:33:47] [debug] [FFmpeg] [in @ 0x7faa1ef24300] Setting 'pixel_aspect' to value '0/1'
+[2026-03-01 02:33:47] [debug] [FFmpeg] [in @ 0x7faa1ef24300] Setting 'colorspace' to value '0'
+[2026-03-01 02:33:47] [debug] [FFmpeg] [in @ 0x7faa1ef24300] Setting 'range' to value '2'
+[2026-03-01 02:33:47] [debug] [FFmpeg] [in @ 0x7faa1ef24300] w:640 h:640 pixfmt:rgb24 tb:1/25 fr:25/1 sar:0/1 csp:gbr range:pc
+[2026-03-01 02:33:47] [debug] [FFmpeg] [libplacebo @ 0x7faa1ef24540] Setting 'w' to value '1440'
+[2026-03-01 02:33:47] [debug] [FFmpeg] [libplacebo @ 0x7faa1ef24540] Setting 'h' to value '1088'
+[2026-03-01 02:33:47] [debug] [FFmpeg] [libplacebo @ 0x7faa1ef24540] Setting 'custom_shader_path' to value 'models/libplacebo/anime4k-v4-a.glsl'
+[2026-03-01 02:33:47] [debug] [FFmpeg] [AVFilterGraph @ 0x7faa1ef24040] query_formats: 3 queried, 6 merged, 0 already done, 0 delayed
+[2026-03-01 02:33:47] [debug] Estimating the total number of frames to process
+[2026-03-01 02:33:47] [warning] Estimating the total number of frames using duration * fps
+[2026-03-01 02:33:47] [warning] Unable to determine the video's duration
+[2026-03-01 02:33:47] [warning] Unable to determine the total number of frames
+[2026-03-01 02:33:47] [debug] [FFmpeg] [in @ 0x7faa1ef24300] video frame properties congruent with link at pts_time: 0
+[2026-03-01 02:33:48] [debug] Processed frame 1/0
+[2026-03-01 02:33:48] [debug] Reached end of file
+[Kframe=1/0 (0.00%); fps=inf; elapsed=00:00:00; remaining=00:00:00
