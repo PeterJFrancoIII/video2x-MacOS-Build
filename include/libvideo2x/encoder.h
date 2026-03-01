@@ -18,6 +18,7 @@ struct EncoderConfig {
     // Non-AVCodecContext options
     std::string codec = "libx264";
     bool copy_streams = true;
+    bool copy_subtitles = true;
 
     // Basic video options
     AVPixelFormat pix_fmt = AV_PIX_FMT_NONE;

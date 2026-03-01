@@ -216,6 +216,13 @@ int Encoder::init(
                 continue;
             }
 
+            // Skip subtitles if copy_subtitles is false
+            if (in_codecpar->codec_type == AVMEDIA_TYPE_SUBTITLE && !enc_cfg.copy_subtitles) {
+                stream_map_[i] = -1;
+                logger()->debug("Skipping subtitle stream at index: {}", i);
+                continue;
+            }
+
             // Create corresponding output stream for audio and subtitle streams
             AVStream* out_stream = avformat_new_stream(ofmt_ctx_, nullptr);
             if (!out_stream) {

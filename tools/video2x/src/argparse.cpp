@@ -96,6 +96,7 @@ int parse_args(
             ("codec,c", PO_STR_VALUE<video2x::fsutils::StringType>()
                 ->default_value(STR("libx264"), "libx264"), "Output codec")
             ("no-copy-streams", "Do not copy audio and subtitle streams")
+            ("no-copy-subtitles", "Do not copy subtitle streams")
             ("pix-fmt", PO_STR_VALUE<video2x::fsutils::StringType>(), "Output pixel format")
             ("bit-rate", po::value<int64_t>(&enc_cfg.bit_rate)->default_value(0),
                 "Bitrate in bits per second")
@@ -325,6 +326,7 @@ int parse_args(
 
         // Parse copy streams flag
         enc_cfg.copy_streams = vm.count("no-copy-streams") == 0;
+        enc_cfg.copy_subtitles = vm.count("no-copy-subtitles") == 0;
 
         // Parse pixel format to AVPixelFormat
         enc_cfg.pix_fmt = AV_PIX_FMT_NONE;

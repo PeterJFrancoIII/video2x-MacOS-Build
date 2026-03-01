@@ -1,0 +1,299 @@
+[  0%] Built target OGLCompiler
+[  1%] Built target OSDependent
+[ 39%] Built target ncnn-generate-spirv
+[ 39%] Built target GenericCodeGen
+[ 40%] Built target glslang-default-resource-limits
+[ 44%] Built target MachineIndependent
+[ 44%] Built target glslang
+[ 45%] Built target SPIRV
+[ 92%] Built target ncnn
+[ 97%] Built target librife-ncnn-vulkan
+[ 97%] Built target librealesrgan-ncnn-vulkan
+[ 97%] Built target librealcugan-ncnn-vulkan
+[ 97%] Building CXX object CMakeFiles/libvideo2x.dir/src/encoder.cpp.o
+In file included from /Users/computer/Video2X/src/encoder.cpp:1:
+In file included from /Users/computer/Video2X/include/libvideo2x/encoder.h:8:
+In file included from /usr/local/include/libavcodec/avcodec.h:32:
+In file included from /usr/local/include/libavutil/avutil.h:300:
+/usr/local/include/libavutil/common.h:212:31: warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+  212 |     if (a&(~0xFF)) return (~a)>>31;
+      |                    ~~~~~~ ~~~~^~~~
+/usr/local/include/libavutil/common.h:213:27: warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  213 |     else           return a;
+      |                    ~~~~~~ ^
+/usr/local/include/libavutil/common.h:223:21: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  223 |     if ((a+0x80U) & ~0xFF) return (a>>31) ^ 0x7F;
+      |                   ~ ^~~~~
+/usr/local/include/libavutil/common.h:223:10: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  223 |     if ((a+0x80U) & ~0xFF) return (a>>31) ^ 0x7F;
+      |          ^~
+/usr/local/include/libavutil/common.h:224:34: warning: implicit conversion loses integer precision: 'int' to 'int8_t' (aka 'signed char') [-Wimplicit-int-conversion]
+  224 |     else                  return a;
+      |                           ~~~~~~ ^
+/usr/local/include/libavutil/common.h:234:33: warning: implicit conversion changes signedness: 'int' to 'uint16_t' (aka 'unsigned short') [-Wsign-conversion]
+  234 |     if (a&(~0xFFFF)) return (~a)>>31;
+      |                      ~~~~~~ ~~~~^~~~
+/usr/local/include/libavutil/common.h:235:29: warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  235 |     else             return a;
+      |                      ~~~~~~ ^
+/usr/local/include/libavutil/common.h:245:23: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  245 |     if ((a+0x8000U) & ~0xFFFF) return (a>>31) ^ 0x7FFF;
+      |                     ~ ^~~~~~~
+/usr/local/include/libavutil/common.h:245:10: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  245 |     if ((a+0x8000U) & ~0xFFFF) return (a>>31) ^ 0x7FFF;
+      |          ^~
+/usr/local/include/libavutil/common.h:246:38: warning: implicit conversion loses integer precision: 'int' to 'int16_t' (aka 'short') [-Wimplicit-int-conversion]
+  246 |     else                      return a;
+      |                               ~~~~~~ ^
+/usr/local/include/libavutil/common.h:256:10: warning: implicit conversion changes signedness: 'int64_t' (aka 'long long') to 'unsigned long long' [-Wsign-conversion]
+  256 |     if ((a+UINT64_C(0x80000000)) & ~UINT64_C(0xFFFFFFFF)) return (int32_t)((a>>63) ^ 0x7FFFFFFF);
+      |          ^~
+/usr/local/include/libavutil/common.h:282:9: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  282 |     if (a & ~((1U<<p) - 1)) return (~a) >> 31 & ((1U<<p) - 1);
+      |         ^ ~
+/usr/local/include/libavutil/common.h:282:41: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  282 |     if (a & ~((1U<<p) - 1)) return (~a) >> 31 & ((1U<<p) - 1);
+      |                                    ~~~~~^~~~~ ~
+/usr/local/include/libavutil/common.h:283:37: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  283 |     else                    return  a;
+      |                             ~~~~~~  ^
+/usr/local/include/libavutil/common.h:438:21: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  438 |     return av_log2((x - 1U) << 1);
+      |                     ^ ~
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+In file included from /Users/computer/Video2X/third_party/ncnn/src/mat.h:40:
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:64:27: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+   64 |     return (sz + n - 1) & -n;
+      |                         ~ ^~
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:64:18: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+   64 |     return (sz + n - 1) & -n;
+      |                ~ ^
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:761:19: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  761 |     tmp.u = value << 16;
+      |           ~ ~~~~~~^~~~~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:853:13: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  853 |     cstep = w;
+      |           ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:859:25: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  859 |     cstep = (size_t)w * h;
+      |                       ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:865:35: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  865 |     cstep = alignSize((size_t)w * h * elemsize, 16) / elemsize;
+      |                                 ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:871:39: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  871 |     cstep = alignSize((size_t)w * h * d * elemsize, 16) / elemsize;
+      |                                     ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:871:35: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  871 |     cstep = alignSize((size_t)w * h * d * elemsize, 16) / elemsize;
+      |                                 ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:877:13: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  877 |     cstep = w;
+      |           ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:883:25: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  883 |     cstep = (size_t)w * h;
+      |                       ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:889:35: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  889 |     cstep = alignSize((size_t)w * h * elemsize, 16) / elemsize;
+      |                                 ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:895:39: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  895 |     cstep = alignSize((size_t)w * h * d * elemsize, 16) / elemsize;
+      |                                     ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:895:35: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  895 |     cstep = alignSize((size_t)w * h * d * elemsize, 16) / elemsize;
+      |                                 ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1169:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+ 1169 |         NCNN_XADD(m.refcount, 1);
+      |         ^
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:121:56: note: expanded from macro 'NCNN_XADD'
+  121 | #define NCNN_XADD(addr, delta) __c11_atomic_fetch_add((_Atomic(int)*)(addr), delta, __ATOMIC_ACQ_REL)
+      |                                                        ^
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1193:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+ 1193 |         NCNN_XADD(refcount, 1);
+      |         ^
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:121:56: note: expanded from macro 'NCNN_XADD'
+  121 | #define NCNN_XADD(addr, delta) __c11_atomic_fetch_add((_Atomic(int)*)(addr), delta, __ATOMIC_ACQ_REL)
+      |                                                        ^
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1198:21: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+ 1198 |     if (refcount && NCNN_XADD(refcount, -1) == 1)
+      |                     ^
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:121:56: note: expanded from macro 'NCNN_XADD'
+  121 | #define NCNN_XADD(addr, delta) __c11_atomic_fetch_add((_Atomic(int)*)(addr), delta, __ATOMIC_ACQ_REL)
+      |                                                        ^
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1229:20: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1229 |     return cstep * c;
+      |                  ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1253:51: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1253 |     Mat m(w, h, d, (unsigned char*)data + cstep * _c * elemsize, elemsize, elempack, allocator);
+      |                                                 ~ ^~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1256:31: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1256 |         m.cstep = (size_t)w * h;
+      |                             ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1262:51: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1262 |     Mat m(w, h, d, (unsigned char*)data + cstep * _c * elemsize, elemsize, elempack, allocator);
+      |                                                 ~ ^~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1265:31: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1265 |         m.cstep = (size_t)w * h;
+      |                             ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1271:61: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1271 |     return Mat(w, h, (unsigned char*)data + (size_t)w * h * z * elemsize, elemsize, elempack, allocator);
+      |                                                           ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1271:57: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1271 |     return Mat(w, h, (unsigned char*)data + (size_t)w * h * z * elemsize, elemsize, elempack, allocator);
+      |                                                       ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1276:61: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1276 |     return Mat(w, h, (unsigned char*)data + (size_t)w * h * z * elemsize, elemsize, elempack, allocator);
+      |                                                           ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1276:57: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1276 |     return Mat(w, h, (unsigned char*)data + (size_t)w * h * z * elemsize, elemsize, elempack, allocator);
+      |                                                       ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1281:56: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1281 |     return (float*)((unsigned char*)data + (size_t)w * y * elemsize);
+      |                                                      ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1286:62: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1286 |     return (const float*)((unsigned char*)data + (size_t)w * y * elemsize);
+      |                                                            ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1303:61: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1303 |     Mat m(w, h, d, channels, (unsigned char*)data + cstep * _c * elemsize, elemsize, elempack, allocator);
+      |                                                           ~ ^~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1310:61: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1310 |     Mat m(w, h, d, channels, (unsigned char*)data + cstep * _c * elemsize, elemsize, elempack, allocator);
+      |                                                           ~ ^~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1317:64: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1317 |     Mat m(w, h, depths, (unsigned char*)data + (size_t)w * h * z * elemsize, elemsize, elempack, allocator);
+      |                                                              ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1317:60: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1317 |     Mat m(w, h, depths, (unsigned char*)data + (size_t)w * h * z * elemsize, elemsize, elempack, allocator);
+      |                                                          ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1318:27: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1318 |     m.cstep = (size_t)w * h;
+      |                         ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1324:64: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1324 |     Mat m(w, h, depths, (unsigned char*)data + (size_t)w * h * z * elemsize, elemsize, elempack, allocator);
+      |                                                              ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1324:60: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1324 |     Mat m(w, h, depths, (unsigned char*)data + (size_t)w * h * z * elemsize, elemsize, elempack, allocator);
+      |                                                          ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1325:27: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1325 |     m.cstep = (size_t)w * h;
+      |                         ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1331:60: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1331 |     return Mat(w, rows, (unsigned char*)data + (size_t)w * y * elemsize, elemsize, elempack, allocator);
+      |                                                          ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1336:60: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1336 |     return Mat(w, rows, (unsigned char*)data + (size_t)w * y * elemsize, elemsize, elempack, allocator);
+      |                                                          ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1341:42: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1341 |     return Mat(n, (unsigned char*)data + x * elemsize, elemsize, elempack, allocator);
+      |                                          ^ ~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1346:42: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1346 |     return Mat(n, (unsigned char*)data + x * elemsize, elemsize, elempack, allocator);
+      |                                          ^ ~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1437:13: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1437 |     cstep = w;
+      |           ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1443:15: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1443 |     cstep = w * h;
+      |           ~ ~~^~~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1449:25: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1449 |     cstep = alignSize(w * h * elemsize, 16) / elemsize;
+      |                       ~~^~~ ~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1455:29: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1455 |     cstep = alignSize(w * h * d * elemsize, 16) / elemsize;
+      |                       ~~~~~~^~~ ~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1461:13: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1461 |     cstep = w;
+      |           ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1467:15: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1467 |     cstep = w * h;
+      |           ~ ~~^~~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1473:25: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1473 |     cstep = alignSize(w * h * elemsize, 16) / elemsize;
+      |                       ~~^~~ ~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1479:29: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1479 |     cstep = alignSize(w * h * d * elemsize, 16) / elemsize;
+      |                       ~~~~~~^~~ ~
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1493:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+ 1493 |         NCNN_XADD(m.refcount, 1);
+      |         ^
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:121:56: note: expanded from macro 'NCNN_XADD'
+  121 | #define NCNN_XADD(addr, delta) __c11_atomic_fetch_add((_Atomic(int)*)(addr), delta, __ATOMIC_ACQ_REL)
+      |                                                        ^
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1545:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+ 1545 |         NCNN_XADD(refcount, 1);
+      |         ^
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:121:56: note: expanded from macro 'NCNN_XADD'
+  121 | #define NCNN_XADD(addr, delta) __c11_atomic_fetch_add((_Atomic(int)*)(addr), delta, __ATOMIC_ACQ_REL)
+      |                                                        ^
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1550:21: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+ 1550 |     if (refcount && NCNN_XADD(refcount, -1) == 1)
+      |                     ^
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:121:56: note: expanded from macro 'NCNN_XADD'
+  121 | #define NCNN_XADD(addr, delta) __c11_atomic_fetch_add((_Atomic(int)*)(addr), delta, __ATOMIC_ACQ_REL)
+      |                                                        ^
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1581:20: warning: implicit conversion changes signedness: 'const int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1581 |     return cstep * c;
+      |                  ~ ^
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1728:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+ 1728 |         NCNN_XADD(m.refcount, 1);
+      |         ^
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:121:56: note: expanded from macro 'NCNN_XADD'
+  121 | #define NCNN_XADD(addr, delta) __c11_atomic_fetch_add((_Atomic(int)*)(addr), delta, __ATOMIC_ACQ_REL)
+      |                                                        ^
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1778:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+ 1778 |         NCNN_XADD(refcount, 1);
+      |         ^
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:121:56: note: expanded from macro 'NCNN_XADD'
+  121 | #define NCNN_XADD(addr, delta) __c11_atomic_fetch_add((_Atomic(int)*)(addr), delta, __ATOMIC_ACQ_REL)
+      |                                                        ^
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1783:21: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+ 1783 |     if (refcount && NCNN_XADD(refcount, -1) == 1)
+      |                     ^
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:121:56: note: expanded from macro 'NCNN_XADD'
+  121 | #define NCNN_XADD(addr, delta) __c11_atomic_fetch_add((_Atomic(int)*)(addr), delta, __ATOMIC_ACQ_REL)
+      |                                                        ^
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+/Users/computer/Video2X/third_party/ncnn/src/mat.h:1812:22: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+ 1812 |     return w * h * d * c;
+      |     ~~~~~~ ~~~~~~~~~~^~~
+/Users/computer/Video2X/src/encoder.cpp:56:67: error: no member named 'codec' in 'video2x::encoder::EncoderConfig'
+   56 |     const AVCodec* encoder = avcodec_find_encoder_by_name(enc_cfg.codec.c_str());
+      |                                                           ~~~~~~~ ^
+/Users/computer/Video2X/src/encoder.cpp:58:64: error: no member named 'codec' in 'video2x::encoder::EncoderConfig'
+   58 |         logger()->error("Could not find encoder '{}'", enc_cfg.codec);
+      |                                                        ~~~~~~~ ^
+In file included from /Users/computer/Video2X/src/encoder.cpp:12:
+In file included from /Users/computer/Video2X/include/libvideo2x/conversions.h:8:
+In file included from /Users/computer/Video2X/third_party/ncnn/src/mat.h:40:
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:55:43: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+   55 |     return (_Tp*)(((size_t)ptr + n - 1) & -n);
+      |                                         ~ ^~
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:82:29: note: in instantiation of function template specialization 'ncnn::alignPtr<unsigned char *>' requested here
+   82 |     unsigned char** adata = alignPtr((unsigned char**)udata + 1, NCNN_MALLOC_ALIGN);
+      |                             ^
+/Users/computer/Video2X/third_party/ncnn/src/allocator.h:55:34: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+   55 |     return (_Tp*)(((size_t)ptr + n - 1) & -n);
+      |                                ~ ^
+72 warnings and 2 errors generated.
+make[2]: *** [CMakeFiles/libvideo2x.dir/src/encoder.cpp.o] Error 1
+make[1]: *** [CMakeFiles/libvideo2x.dir/all] Error 2
+make: *** [all] Error 2

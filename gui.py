@@ -77,9 +77,9 @@ class Api:
             "-p", processor if processor != "anime4k" else "libplacebo",
         ]
 
-        # Fix for MP4 subtitle compatibility
-        if extension.lower() == "mp4":
-            cmd.append("--no-copy-streams")
+        # MP4 on macOS often has issues with subtitle stream copying
+        if extension == "mp4":
+            cmd.append("--no-copy-subtitles")
 
         # Handle processor-specific arguments
         if processor == "rife":
